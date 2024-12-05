@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  html,body{
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .menu-1 span{
+    display: flex;
+    align-items: center;
+    width: 180px;
+    flex-wrap: wrap;
+    color: white;
+    margin:20px 0px 0px 20px
+  }
+
+  .menu-1 span img{
+    margin-right: 20px;
+    width: 17px;
+    height: 17px;
+  }
+
+  .icones{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  .img-icone img{
+    width: 23px;
+    height: 23px;
+  }
+
+  
+#boxes1{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  h2{
+    color: aliceblue;
+    font-size: 1.8vw;
+    font-family: sans-serif;
+    margin-left: 28px;
+  }
+  
+  .box1{
+    display: flex;
+    background-color: rgb(48,48,48);
+    width: 270px;
+    align-items: center;
+    gap: 25px;
+    margin-left: 28px;
+    margin-top: 20px;
+  }
+  
+  .box-img img{
+    width: 75px;
+    height: 75px;
+  }
+  
+  .box-text p{
+    color: aliceblue;
+  }
+  
+  h3{
+    color: aliceblue;
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    margin-left: 28px;
+    margin-top: 22px;
+  }
+  
+  .cart1{
+    background-color: rgb(24,24,24);
+    width: 150px;
+    height: 190px;
+    margin-left: 28px;
+    margin-top: 17px;
+    padding: 14px;
+    border-radius: 0.6vw;
+  }
+  
+  .cart-img img{
+    width: 140px;
+    height: 150px;
+    margin-left:5px ;
+  }
+  
+  .cart-text h5{
+    color: aliceblue;
+    font-size: 1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 9px;
+    font-weight: 400;
+  }
+  
+  .cart-text p{
+    color: aliceblue;
+    font-size: 0.8vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 9px;
+  }
+  
+  #boxes2{
+    display: flex;
+  }
+  
+  #main{
+    position: relative;
+  }
+  
+  #footer{
+    background-color: rgb(24,24,24);
+    width: 100vw;
+    height: 16vh;
+    bottom: 0%;
+    position: absolute;
+  }
+  
+  .line1{
+    width: 100vw;
+    height: 12vh;
+  }
+  
+  .line1 img{
+    width: 36vw;
+    height: 8vh;
+    margin: 10px 0px 5px 520px;
+    position: absolute;
+  }
+  
+  .line2{
+    background-color: rgb(30,215,96);
+    width: 100vw;
+    height: 3vh;
+  }
+  
+  .rgt img{
+    width: 18vw;
+    height: 4vh;
+    margin-left: 80vw;
+    position: absolute;
+    bottom: 47%;
+  }
+  
+  .line2 p{
+    margin-left: 80vw;
+    font-weight: 500;
+  }
+  
+  
