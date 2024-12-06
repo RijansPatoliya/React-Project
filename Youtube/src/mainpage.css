@@ -1,0 +1,42 @@
+.logo{
+  display: flex;
+  align-items: center;
+  width: 260px;
+}
+
+.logo p{
+    font-weight: 500;
+}
+
+.discription{
+    margin-left: 50px;
+    display: flex;
+    font-size: 0.9em;
+    font-weight: 500;
+    gap: 5px;
+}
+
+pre{
+    font-size: 0.8rem;
+    font-family: 'roboto',sans-serif;
+    margin-left: 50px;
+    margin-top: 6px;
+}
+
+.carts{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    margin-left: 5%;
+    margin-top: 1.5%;
+}
+
+.cartImg{
+    width: 260px;
+    margin-top:4px;
+}
+
+.tickMark{
+    width: 12px;
+    height: 12px;
+    margin-top: 1%;
+}
