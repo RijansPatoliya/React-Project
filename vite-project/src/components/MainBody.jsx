@@ -104,7 +104,7 @@ const data2=[
 
      <div id='boxes1'>
         {
-          data1.map((i)=>(
+          data1.filter((i)=>i.id%2!=0).map((i)=>(
             <div key={i.id} className='box1 box-img box-text'>
               <img src={i.img} />
               <p>{i.title}</p>
