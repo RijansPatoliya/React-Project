@@ -2,11 +2,16 @@
     grid-row: 1/span 2;
     width: 240px;
     height: 100vh;
-    background-color: rgb(31, 30, 30);
+    background-color: rgb(15,15,15);
+}
+
+.bars{
+    width:12%;
+    height: 26%;
 }
 
 .youtubeLogo{
-    width: 45%;
+    width: 40%;
     height: 20%;
 }
 
@@ -22,8 +27,17 @@
     align-items: center;
 }
 
+.special-style{
+    background-color: rgb(66, 66, 66);
+    padding: 5px;
+    border-radius: 9px;
+}
+
 .line{
-    border-bottom: 1px solid rgb(245, 242, 238);
+    border-bottom: 1px solid rgb(112, 111, 110);
     font-size: 1vw;
 }
 
+h3{
+    margin: 10px;
+}

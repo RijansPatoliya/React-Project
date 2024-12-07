@@ -9,7 +9,7 @@ const data1 = [
   {id:4,img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image1.png?raw=true",title:"Liked songs"},
   {id:5,img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image2.png?raw=true",title:"Dance/electronic mix"}
 ]
-
+  
 const data2=[
   {no:1,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image9.png?raw=true",message1:"Motivation daily...",message2:"Ran ina Scoti"},
   {no:2,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image6.png?raw=true",message1:"The Stories of Ma..",message2:"Ran ina Scoti"},

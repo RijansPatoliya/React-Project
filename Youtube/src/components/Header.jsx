@@ -7,11 +7,11 @@ const Header = () => {
         {id:3,text:"Live rodemd"},
         {id:4,text:"Rijans"},
         {id:5,text:"Data Structures"},
-        {id:6,text:"Figma"},
         {id:6,text:"puspa2"},
-        {id:7,text:"indian world"},
-        {id:8,text:"Mobile Games"},
-        {id:9,text:"hell royal"}
+        {id:7,text:"UNIX Opera"},
+        {id:8,text:"indian world"},
+        {id:9,text:"Mobile Games"},
+        {id:10,text:"hell royal"}
     ]
 
   return (
@@ -20,7 +20,7 @@ const Header = () => {
     <nav>
       <div className="search">
         <div className="textInput">
-        <input type="text" placeholder="  search....."/>
+        <input type="text" placeholder="  Search..."/>
         </div>
         <div className="search-img">
         <img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/search.png?raw=true" className="img1"/>
@@ -37,7 +37,7 @@ const Header = () => {
      <div className="tags">
      
        {tags.map((i)=>(
-        <div key={i.id} className="tag">
+        <div key={i.id} className={i.id == 1? 'spe ' : 'tag' }>
            <p>{i.text}</p>
         </div>
        ))}

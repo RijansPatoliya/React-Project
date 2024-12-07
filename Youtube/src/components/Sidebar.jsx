@@ -33,13 +33,13 @@ const Sidebar = () => {
     <>
     <div id='sidebar'>
         <div className="logo">
-            <img src="https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/hambarger.png "/>
+            <img src="https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/hambarger.png " className="bars"/>
             <img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Youtube%20logo.png?raw=true" className="youtubeLogo"/>
         </div>
 
       <div className="line">
       {data1.map((i)=>(
-        <div key={i.id} className="icones ">
+        <div key={i.id} className={i.id === 1 ? 'icones special-style' : 'icones'}>
             <img src={i.url}/>
             <p>{i.text}</p>
         </div>
@@ -54,6 +54,8 @@ const Sidebar = () => {
             </div>
         ))}
       </div>
+      
+      <h3>Subscription</h3>
 
       <div className="line">
         {data3.map((i)=>(
