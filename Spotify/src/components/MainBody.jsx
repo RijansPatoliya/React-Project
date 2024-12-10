@@ -1,23 +1,41 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 
 const MainBody = () => {
 
-const data1 = [
-  {id:1,img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/object1.png?raw=true",title:"Liked Songs"},
-  {id:2,img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image4.png?raw=true",title:"Netflix playlist"},
-  {id:3,img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image3.png?raw=true",title:"box-text"},
-  {id:4,img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image1.png?raw=true",title:"Liked songs"},
-  {id:5,img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image2.png?raw=true",title:"Dance/electronic mix"}
-]
+  const [data1 , setData1] = useState([]);
+  const[data2,setData2]=useState([])
+
+  useEffect(() => {
+      // Fetch data from the API
+      fetch('http://localhost:8000/data1')
+          .then((response) => response.json())
+          .then((data) => setData1(data))
+          .catch((error) => console.error('Error fetching deta: ' ,error));
+      },[]);
+
+  useEffect(()=>{
+    fetch("http://localhost:8000/data2")
+    .then((response)=>response.json())
+    .then((data)=>setData2(data))
+    .catch((error)=>{console.log('error fetching deta: ' ,error)})
+  })
+
+// const data1 = [
+//   {id:1,img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/object1.png?raw=true",title:"Liked Songs"},
+//   {id:2,img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image4.png?raw=true",title:"Netflix playlist"},
+//   {id:3,img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image3.png?raw=true",title:"box-text"},
+//   {id:4,img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image1.png?raw=true",title:"Liked songs"},
+//   {id:5,img:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image2.png?raw=true",title:"Dance/electronic mix"}
+// ]
   
-const data2=[
-  {no:1,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image9.png?raw=true",message1:"Motivation daily...",message2:"Ran ina Scoti"},
-  {no:2,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image6.png?raw=true",message1:"The Stories of Ma..",message2:"Ran ina Scoti"},
-  {no:3,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image5.png?raw=true",message1:"The Alexa Show",message2:"Ran ina Scoti"},
-  {no:4,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image7.png?raw=true",message1:"Words Beyond act.",message2:"Ran ina Scoti"},
-  {no:5,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image8.png?raw=true",message1:"Meditation Self",message2:"Ran ina Scoti"},
-  {no:6,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image9.png?raw=true",message1:"Motivation daily...",message2:"Ran ina Scoti"}
-]
+// const data2=[
+//   {no:1,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image9.png?raw=true",message1:"Motivation daily...",message2:"Ran ina Scoti"},
+//   {no:2,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image6.png?raw=true",message1:"The Stories of Ma..",message2:"Ran ina Scoti"},
+//   {no:3,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image5.png?raw=true",message1:"The Alexa Show",message2:"Ran ina Scoti"},
+//   {no:4,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image7.png?raw=true",message1:"Words Beyond act.",message2:"Ran ina Scoti"},
+//   {no:5,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image8.png?raw=true",message1:"Meditation Self",message2:"Ran ina Scoti"},
+//   {no:6,img_link:"https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/10.spotify-clone/assets/image9.png?raw=true",message1:"Motivation daily...",message2:"Ran ina Scoti"}
+// ]
 
   return (
     <>
