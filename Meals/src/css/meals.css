@@ -1,0 +1,104 @@
+.meals-app {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.meals-header h1 {
+  text-align: center;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #f7971e, #ffd200);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+.search-bar,
+.category-selector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.search-bar input,
+.category-selector select {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: 220px;
+}
+
+.search-bar button,
+.category-selector button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #f7971e;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-bar button:hover,
+.category-selector button:hover {
+  background-color: #ffd200;
+}
+
+.meals-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.meal-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  transform: rotateZ(-1.5deg) scale(0.98);
+}
+
+.meal-card:hover {
+  transform: rotateZ(0deg) scale(1.03);
+}
+
+.meal-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.meal-details {
+  padding: 15px;
+}
+
+.meal-details h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.meal-details p {
+  font-size: 0.9rem;
+  color: #cfcfcf;
+  margin-top: 5px;
+}
+
+.loading,
+.error,
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
