@@ -1,0 +1,74 @@
+/* 🌙 Dark Theme Accordion Styles */
+body {
+    background-color: #121212; /* Pure dark background */
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* 📌 Accordion Main Container */
+  .accordian-card {
+    width: 400px; /* Set width for a nice layout */
+    background-color: #1e1e1e; /* Dark background */
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 📝 Header Section */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #292929;
+    border-bottom: 1px solid #333;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .header:hover {
+    background-color: #3a3a3a;
+  }
+  
+  /* ➕ Icon (+/-) */
+  .header p {
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out, color 0.3s ease;
+  }
+  
+  .header:hover p {
+    transform: scale(1.2);
+    color: #ffcc00; /* Yellow highlight */
+  }
+  
+  /* 📜 Accordion Content (Hidden by Default) */
+  .content {
+    background-color: #252525;
+    padding: 0px 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #dcdcdc;
+    border-radius: 0 0 8px 8px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.3s ease;
+  }
+  
+  /* ✨ Active (Opened) Content */
+  .content.active {
+    max-height: 200px;
+    opacity: 1;
+    padding: 15px 20px;
+  }
+  
