@@ -1,0 +1,73 @@
+
+#sidebar{
+  background-color: rgb(0,0,0);
+  width: 17%;
+  height: 84vh;
+  color: white;
+}
+
+i img{
+  width: 120px;
+  height: 34px;
+  margin:10px 0 0 20px;
+}
+
+.menu-1{
+  margin-top: 25px;
+}
+
+
+.menu-2{
+  margin:35px 0px 0px 20px;
+}
+
+
+.menu-3{
+  margin-top: 31px;
+}
+
+.menu-3 p{
+  margin: 15px 0px 10px 20px;
+}
+
+#install-img{
+  margin: 35px 0px 0px 20px;
+}
+
+#install-img span{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#install-img img{
+  width: 30px;
+  height: 30px;
+}
+
+#container{
+  display: flex;
+}
+
+#main{
+  width:83%;
+  height: 84vh;
+  background-color: rgb(33,33,33);
+}
+
+.img{
+  display: flex;
+  gap: 64vw;
+}
+
+.arrow img{
+  width: 90px;
+  height: 35px;
+  padding: 28px;
+}
+
+.person img{
+  width: 100px;
+  height: 32px;
+  margin-top: 28px;
+}

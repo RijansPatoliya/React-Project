@@ -1,0 +1,93 @@
+.indian-banks-container {
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.indian-banks-title {
+  font-size: 2.2rem;
+  color: #ffb347;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.indian-banks-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.indian-banks-input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  width: 250px;
+  background-color: #020101;
+  color: #ffffff;
+}
+
+.indian-banks-input::placeholder {
+  color: #ccc;
+}
+
+.indian-banks-button {
+  padding: 10px 20px;
+  background-color: #ffb347;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indian-banks-button:hover {
+  background-color: #ffa500;
+}
+
+.indian-banks-loading,
+.indian-banks-error {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.indian-banks-error {
+  color: #ff6b6b;
+}
+
+.indian-banks-details {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px rgba(255, 179, 71, 0.2);
+}
+
+.indian-banks-details-title {
+  color: #ffa07a;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.indian-banks-details-list {
+  list-style: none;
+  padding: 0;
+}
+
+.indian-banks-details-item {
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.indian-banks-details-item strong {
+  color: #ffffff;
+}
